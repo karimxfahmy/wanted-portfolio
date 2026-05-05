@@ -1,0 +1,13 @@
+.about-row {
+  gap: 24px;
+}
+
+.about-text {
+  width: 50%;
+}
+
+@media (max-width: 809.98px) {
+  .about-text {
+    width: 100%;
+  }
+}

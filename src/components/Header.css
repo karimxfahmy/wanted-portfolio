@@ -1,0 +1,18 @@
+.wanted-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  color: var(--color-text-muted);
+  line-height: 1;
+  letter-spacing: 0;
+  /* Fluid font-size that fills the 720px container like the original SVG fit-text */
+  font-size: clamp(72px, 28vw, 240px);
+  text-align: center;
+  width: 100%;
+  user-select: none;
+}
+
+@media (min-width: 1200px) {
+  .wanted-title {
+    font-size: 240px;
+  }
+}

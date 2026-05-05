@@ -1,0 +1,25 @@
+.site-footer {
+  width: 100%;
+  max-width: var(--container-max);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 48px 0;
+}
+
+.site-footer__copy {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+@media (max-width: 809.98px) {
+  .site-footer {
+    flex-direction: column;
+    gap: 48px;
+    padding: 48px 0;
+  }
+}

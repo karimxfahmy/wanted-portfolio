@@ -1,0 +1,94 @@
+.profile-photo-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 330px;
+  aspect-ratio: 1 / 1;
+}
+
+.profile-photo {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  filter: sepia(0.7);
+  transform: perspective(1200px) rotate(-2deg);
+  animation: fadeInRotateProfile 600ms 0.2s ease-out backwards;
+  z-index: 1;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-badge {
+  position: absolute;
+  top: -10px;
+  right: -28px;
+  z-index: 2;
+  display: inline-block;
+  padding: 12px 18px;
+  border: 3px solid var(--color-text);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  white-space: nowrap;
+  transform: perspective(1200px) rotate(12deg);
+  animation: fadeInRotateBadge 600ms 1s ease-out backwards;
+}
+
+.profile-name-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 24px 96px;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  transform: perspective(1200px) rotate(1deg);
+  animation: fadeInRotateName 600ms 0.6s ease-out backwards;
+}
+
+.profile-name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 1.2;
+  color: var(--color-bg);
+  text-align: center;
+}
+
+.profile-role {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-bg);
+  text-align: center;
+}
+
+@media (max-width: 809.98px) {
+  .profile-photo-wrap {
+    max-width: 260px;
+  }
+
+  .profile-badge {
+    top: -8px;
+    right: -20px;
+    font-size: 20px;
+    padding: 10px 14px;
+  }
+
+  .profile-name-block {
+    padding: 24px 36px;
+  }
+
+  .profile-name {
+    font-size: 36px;
+  }
+}
