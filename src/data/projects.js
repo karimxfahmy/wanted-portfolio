@@ -161,6 +161,33 @@ export const PROJECTS = [
       { label: "Format", value: "Short" },
     ],
   },
+  {
+    slug: "wallah-habibeats",
+    caseNumber: "007",
+    title: "WALLAH - DJ HABIBEATS & ONUY",
+    tagline: "Where rhythm meets voice — a visual treatment brought to life.",
+    category: "Music Video",
+    date: "Jun 1, 2026",
+    year: "2026",
+    client: "DJ HABIBEATS & ONUY",
+    role: "Assistant Editor",
+    runtime: "Music video",
+    image:
+      "https://img.youtube.com/vi/lD-AURvsxJo/maxresdefault.jpg",
+    alt: "WALLAH - DJ HABIBEATS & ONUY cover",
+    videoUrl: "https://www.youtube.com/watch?v=lD-AURvsxJo",
+    description: [
+      "WALLAH brings together DJ HABIBEATS' pulsing, rhythm-forward production with ONUY's distinctive vocal presence — a collaboration that demanded visuals as bold and layered as the track itself.",
+      "The creative process centered on translating the original treatment into a finished piece that honors both artists: sharp cuts locked to the beat, color work that shifts with the mood, and a visual language that lets the energy of the music lead every frame.",
+    ],
+    credits: [
+      { label: "Direction", value: "Khaled Bargona" },
+      { label: "DOP", value: "Mustafa Yasser" },
+      { label: "Editor", value: "Mohamed Hazem" },
+      { label: "Assistant Editor", value: "Karim Fahmy" },
+      { label: "Color", value: "Anas Khaire" },
+    ],
+  },
 ];
 
 export function getProjectBySlug(slug) {
